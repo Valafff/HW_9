@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #id_orderItem{
+        margin-bottom: 20px;
+    }
+
+    #id_orderTable tr, #id_orderTable td{
+       border:  1px solid black;
+    }
+</style>
+
+</head>
+<body>
+
+    <h2>Заявка на поставку</h2>
+<table id="id_orderItem">
+    <thead>
+        <tr>
+            <th>Категория</th>
+            <th>Тип</th>
+            <th>Производитель</th>
+            <th>Модель</th>
+            <th>Количество</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+
+
+        <tr>
+            <td>
+                 <input type="text" name="newItemCategory" id="category"/>
+            </td>
+            <td>
+                <input type ="text" name ="newItemType" id="type"/>
+           </td>
+           <td>
+                 <input type ="text" name ="newItemManuf" id="manufacturer"/>
+            </td>
+            <td>
+                 <input type ="text" name ="newItemModel" id="model"/>
+            </td>
+            <td>
+                <input type = "number" min = "1" name = "newItemQty" value ="1" id="quantity"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input type ="button" name="addItemToOrder" value="Add to order"/>
+            </td>
+        </tr>
+    </tbody>
+
+    <table id="id_orderTable">
+        <thead>
+            <tr>
+                <th>Категория</th>
+                <th>Тип</th>
+                <th>Производитель</th>
+                <th>Модель</th>
+                <th>Количество</th>
+            </tr>
+        </thead>
+</table>
+
+    <script src="js.js"></script>
+</body>
+</html>
